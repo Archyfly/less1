@@ -4,6 +4,7 @@ puts "Enter second side of triangle:"
 b = gets.chomp.to_i
 puts "Enter third side of triangle:"
 c = gets.chomp.to_i
+max_side = 0 # для определения наибольшей стороны
 
 if a==b && a==c then
   puts "Triangle is equilateral . Has three equal sides." # Isosceles - равнобедренный, Equilateral - равносторонний
