@@ -8,25 +8,26 @@ max_side = 0 # для определения наибольшей стороны
 
 if a==b && a==c then
   puts "Triangle is equilateral . Has three equal sides." # Isosceles - равнобедренный, Equilateral - равносторонний
-elsif (a!=b) && (a!=c) && (b!=c) then
+end
+
+if (a!=b) && (a!=c) && (b!=c) then
   puts "triangle with different sides"
-  if (a<b) then puts "a < b"
-    if (a<c) then puts "a - min"
-    elsif puts "b max"
-    end
-  elsif (a<c) then puts " a < c, a > b => b - min, c - max"
-  elsif (b>c) then puts "b > c, a > b => a - max, c - min "
-  end
+   if a>b && a>c then 
+   	max_side = a
+   	sides_sqr_summ = b*b + c*c
+   end
+   if b>a && b>c then 
+   	max_side = b
+  	sides_sqr_summ = c*c + a*a
+   end
+   if c>a && b<c then
+  	max_side = c
+  	sides_sqr_summ = b*b + a*a   
+	end
+end
 
+puts "max_side = #{max_side}" # проверка
+puts "sides_sqr_summ = #{sides_sqr_summ}" # проверкаcatets_sqr_summ 
+puts "Triangle is rectangular, gipotenuse = #{max_side}" if max_side*max_side == sides_sqr_summ 
 
-
-
-elsif (a==b) || (b==c) || (a==c) then puts "triangle Isosceles - равнобедренный"
-#elsif puts "triangle Isosceles - равнобедренный"
-#else
-#puts "Triangle is equilateral . Has three equal sides."
-  end
-
-
-
-
+ 
