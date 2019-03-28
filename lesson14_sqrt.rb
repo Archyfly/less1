@@ -14,7 +14,8 @@ if discr > 0
   x1 = ((-b) - sqrt_discr)/(2 * a)
   x2 = ((-b) + sqrt_discr)/(2 * a)
   puts "x1=#{x1}, x2=#{x2}"
-elsif discr < 0 then puts "It hasn't solutions"
+elsif discr < 0 
+  puts "It hasn't solutions"
 else
   puts "It has one solution"
   puts "discriminant = #{discr}"
