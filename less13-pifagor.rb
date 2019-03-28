@@ -31,8 +31,7 @@ else # проверка на равносторонность
     puts "max_side_sqr_round = #{max_side_sqr_round}" 
     if max_side_sqr_round == sides_sqr_summ 
       puts "Triangle is rectangular, gipotenuse = #{max_side}"
-    elsif (a == b) || (a == c) || (b == c)
-      puts "Triangle has two equivalent sides, it's isosceles"
+      puts "Triangle has two equivalent sides, it's isosceles" if (a == b) || (a == c) || (b == c)
     else
       puts "Triangle has three diffent sides and NOT rectangular "
     end
